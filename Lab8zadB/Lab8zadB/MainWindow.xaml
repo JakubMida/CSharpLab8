@@ -1,0 +1,15 @@
+﻿<Window x:Class="Lab8zadB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab8zadB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnWczytaj" Content="Wczytaj" HorizontalAlignment="Left" Margin="37,40,0,0" VerticalAlignment="Top" Height="60" Width="114" Click="btnWczytaj_Click"/>
+        <ListBox x:Name="listStudenci" HorizontalAlignment="Left" Height="207" Margin="260,54,0,0" VerticalAlignment="Top" Width="447" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label x:Name="lblSrednia" Content="Label" HorizontalAlignment="Left" Margin="260,278,0,0" VerticalAlignment="Top" Height="127" Width="447"/>
+
+    </Grid>
+</Window>
