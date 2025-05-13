@@ -1,0 +1,16 @@
+﻿<Window x:Class="KolosGrupaA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KolosGrupaA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="listSamochody" HorizontalAlignment="Left" Height="222" Margin="30,36,0,0" VerticalAlignment="Top" Width="341" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label x:Name="lblSamochody" Content="Label" HorizontalAlignment="Left" Height="59" Margin="30,279,0,0" VerticalAlignment="Top" Width="333"/>
+        <Button x:Name="btnWczytaj" Content="Wczytaj" HorizontalAlignment="Left" Margin="400,38,0,0" VerticalAlignment="Top" Height="42" Width="89" Click="btnWczytaj_Click"/>
+        <Button x:Name="bntDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="400,85,0,0" VerticalAlignment="Top" Height="41" Width="77" Click="bntDodaj_Click"/>
+
+    </Grid>
+</Window>
